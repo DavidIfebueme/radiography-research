@@ -1,0 +1,47 @@
+polish_topic_task:
+  description: >
+    Research current publications on {topic}. Refine it into a single, professional title 
+    and a three-sentence research gap statement that has never been explored.
+  expected_output: A unique, professional research title and thesis statement.
+  agent: topic_polisher
+
+technical_research_task:
+  description: >
+    Gather 10-15 specific technical facts, data points, and existing protocol limitations 
+    related to the refined topic. Focus on radiography imaging data and ZK-proof efficiency.
+  expected_output: A technical dossier of facts and figures.
+  agent: fact_researcher
+
+academic_drafting_task:
+  description: >
+    Using the research dossier, write a 4,000 to 5,000-word academic paper. 
+    You must be extremely detailed in every section. 
+    Chapters to include:
+    1. Abstract
+    2. Introduction: Detailed background on blockchain and radiography.
+    3. Literature Review: Analysis of current ZK-cryptography in healthcare.
+    4. Methodology: Technical framework for implementing ZK-SNARKs in imaging.
+    5. Results & Discussion: Security analysis and throughput expectations.
+    6. Conclusion and Future Directions.
+    
+    STRICT RULES:
+    - NO quotation marks ever.
+    - NO em dashes ever.
+    - NO introductory AI phrases like "In the rapidly evolving landscape...".
+    - DO NOT summarize. Be verbose and technical.
+  expected_output: A 5-10 page comprehensive academic paper in Markdown.
+  agent: academic_writer
+
+ai_detection_bypass_task:
+  description: >
+    Review the draft. Alter the sentence cadence and word choice to ensure a 0% AI detection score. 
+    Ensure no quotation marks or em dashes were used.
+  expected_output: A humanized, detector-proof version of the article.
+  agent: humanizer_editor
+
+technical_accuracy_check_task:
+  description: >
+    Check the entire paper for technical errors in blockchain logic or radiography principles. 
+    Correct any grammar or spelling mistakes.
+  expected_output: The final, polished academic paper ready for publication.
+  agent: final_proofreader
