@@ -28,7 +28,6 @@ dist/
 .vscode/
 
 
-Research_Paper.md
 report.md
 logs.txt
 *.log

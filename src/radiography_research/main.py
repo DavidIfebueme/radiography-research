@@ -4,7 +4,7 @@ from radiography_research.crew import RadiographyResearchCrew
 
 def run():
     inputs = {
-        'topic': 'combining blockchain and zero knowledge cryptography in imaging and radiography'
+        'topic': 'blockchain technology and AI for electronic medical records'
     }
     RadiographyResearchCrew().crew().kickoff(inputs=inputs)
 
